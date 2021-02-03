@@ -3,3 +3,7 @@
 <p> <%= @course.name %> </p>
 <p> <%= @course.seat_limit %> </p>
 <p> <%= @course.classroom_number %> </p>
+
+<%= link_to "See All Courses", courses_path %>
+<%= link_to "Edit #{@course.name}", edit_course_path(@course) %>
+<%= button_to "Delete Course", "/courses/#{@course.id}", method: "delete" %>

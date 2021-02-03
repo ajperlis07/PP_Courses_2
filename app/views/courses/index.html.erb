@@ -1,7 +1,8 @@
 <h1> All the Courses </h1>
 <ol>
     <% @courses.each do |course| %>
-        <li> <%= course.name %> </li>
+        
+        <li> <%= link_to course.name, course_path(course) %> </li>
     <% end %>
 </ol> 
 
