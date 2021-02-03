@@ -1,0 +1,9 @@
+<h1> All the Courses </h1>
+<ol>
+    <% @courses.each do |course| %>
+        <li> <%= course.name %> </li>
+    <% end %>
+</ol> 
+
+<p> <%= link_to "Create New Course", "/courses/new" %> </p>
+
